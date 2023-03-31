@@ -21,7 +21,14 @@ class Dog {
     this.name = name;
     this.sex = sex;
   }
+
+  speak() {
+    return `${this.name} says woof!`;
+  }
 }
+
+const dog = new Dog("Enzo", "female");
+console.log(dog.speak());
 
 //bird class
 class Bird {
