@@ -36,4 +36,15 @@ class Bird {
     this.name = name;
     this.sex = sex;
   }
+
+  speak() {
+    if (this.sex === "male") {
+      return `It's me! ${this.name}, the parrot!`;
+    }
+
+    return `${this.name} says squawk!`;
+  }
 }
+
+const bird = new Bird("Parroti", "female");
+console.log(bird.speak());
